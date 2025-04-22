@@ -4,7 +4,7 @@ import Models.Persona;
 public class ViewConsole {
 
     public void printPersonsArray(Persona[] personas){
-        if(personas[i] == null || personas.length == 0){
+        if(personas == null || personas.length == 0){
             System.out.println("No existen personas registradas");
         }
         for(int i = 0; i < personas.length; i++){
@@ -14,15 +14,6 @@ public class ViewConsole {
 
     public void printMessage(String message){
         System.out.println(message);
-    }
-
-    public void displaySearchResult(Persona persons){
-        if(persons != null){
-            System.out.println("Persona encontrada --> " +persons);
-        } else {
-            System.out.println("La persona que buscaba, no ha sido encontrada" );
-        }
-        
     }
 
 }
